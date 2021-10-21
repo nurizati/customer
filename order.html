@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Karipap Mac and Cheese</h2>
+    <br><br>
+    <fieldset id="orderinfo">
+        <legend>Order</legend>
+        <fieldset id="crustbox">
+           <legend>Crust</legend>
+           <input type="radio" name="crust" id="thin" value="Thin" />
+           <label for="thin"> Karipap Mac and Cheese Ayam</label>
+           <input type="radio" name="crust" id="thick" value="Deep Dish" />
+           <label for="thick">Karipap Mac and Cheese Daging</label>
+        </fieldset>
+        <br><br>
+    <table border="1" width="800" height="200" cellpadding="5" cellspacing="0">
+        <tr>
+            <th rowspan="2">Item</th>
+            <th rowspan="2">Quantity</th>
+            <th rowspan="2">Unit</th>
+            <th rowspan="2"> Notes (Optional)</th>
+            
+        </tr>
+        <tr>
+            
+        </tr>
+        <tr>
+            <td>Karipap Mac and Cheese Ayam</td>
+            <td>
+                <select id="quantity" name="quantity" required="required">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    
+                </select>
+            </td>
+            <td>
+               <select id="Unit" name="Unit" required="required">
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>
+                  <option value="XL">Extra Large</option>
+               </select>
+            </td>
+            <td>
+                <label for="Optional" id="Optional">Optional</label>
+
+               <textarea id="Optional" name="Optional" rows="3" cols="50" placeholder="note Optional"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Karipap Mac and Cheese Daging</td>
+            <td>
+                <select id="quantity" name="quantity" required="required">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    
+                </select>
+            </td>
+            <td>
+               <select id="size" name="size" required="required">
+                  <option value="Small">Small</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>
+                  <option value="XL">Extra Large</option>
+               </select>
+            </td>
+            <td>
+                <label for="Optional" id="Optional">Optional</label>
+                
+               <textarea id="Optional" name="Optional" rows="3" cols="50" placeholder="note Optional"></textarea>
+            </td>
+        </tr>
+    </table>
+
+        <br><br>
+        <fieldset id="orderbutton">
+            <input type="button" id="orderBtn" value="Order" onclick="alert('Thank You for your orde! We will contact via Whatsapp and E-mail  please wait patiently....')"/>
+            
+         </fieldset>
+      </form>
+</body>
+</html>
